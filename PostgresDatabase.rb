@@ -1,3 +1,8 @@
+=begin
+  Se realiza la conexión a la base de datos PostgreSQL, la cual está la MV.
+  Se tiene un método que recibe los string con los comandos SQL a ejecutar.
+=end
+
 require 'pg'
 
 $connection

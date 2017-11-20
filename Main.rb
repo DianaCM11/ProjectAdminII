@@ -1,3 +1,10 @@
+=begin
+  Clase para llamar a los métodos de conexión.
+  Se realiza la conexión con el servidor, con la base de datos,
+  con el API y con el syslog de la máquina local.
+  Además, se hacen los insert para llenar la base de datos.
+=end
+
 require 'net/http'
 require 'json'
 

@@ -1,4 +1,4 @@
-GCI ejecutado en el servidor
+GCI -> Código ejecutado en el servidor para mostrar los datos en el dashboard.
 
 #!/usr/bin/ruby
 
