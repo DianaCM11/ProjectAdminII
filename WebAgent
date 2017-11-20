@@ -1,0 +1,31 @@
+GCI ejecutado en el servidor
+
+#!/usr/bin/ruby
+
+require 'cgi'
+require 'pg'
+
+cgi = CGI.new
+
+puts cgi.header
+puts "<html><body>Proyecto II Administracion de Base de datos</body></html>"
+
+  while true  do
+    size = system("df -h /")
+
+    puts "Datos sobre almacenamiento: #{size}%"
+
+    connection = PG::Connection.open(:host => 'localhost', :dbname => 'postgres$
+    rescue PG::Error => e
+        puts e.message
+
+     result = connection.exec("SELECT * FROM LOG")
+       result.each do |row|
+         puts row
+       end
+
+    sleep 5
+
+  end
+
+
