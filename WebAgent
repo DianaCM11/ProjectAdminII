@@ -15,7 +15,7 @@ puts "<html><body>Proyecto II Administracion de Base de datos</body></html>"
 
     puts "Datos sobre almacenamiento: #{size}%"
 
-    connection = PG::Connection.open(:host => 'localhost', :dbname => 'postgres$
+    connection = PG::Connection.open(:host => 'localhost', :dbname => 'postgres', :user => 'sysadmin', :password => 'admin')
     rescue PG::Error => e
         puts e.message
 
